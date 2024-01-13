@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <%= mytitle %> </title>
+    <link rel="stylesheet" href="home_style.css">
+</head>
+<body>
+    <form name="username" action="/add-user" method="post">
+        <h1>what is your username?</h1>
+        <input type="text" name="username" id="username">
+        
+        <input type="submit" value="Send to DB">
+    </form>
+
+    <% if (arr && arr.length > 0) { %>
+        <h2>Users in the Database:</h2>
+        <ul>
+            <% arr.forEach(user => { %>
+                <li><%= user.username %></li>
+            <% }); %>
+        </ul>
+    <% } else { %>
+        <p>No users in the database.</p>
+    <% } %>
+    
+</body>
+</html>

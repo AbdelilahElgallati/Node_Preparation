@@ -1,0 +1,36 @@
+form {
+    border: 1px solid ;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 67%;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    width: 30%;
+    padding: 5px;
+    background-color:blueviolet;
+    color: white;
+}
+
+h2 {
+    color:rgb(127, 133, 210);
+    text-align: center;
+}
+
+li{
+    border-bottom: 1px solid;
+    width: 50%;
+    text-decoration: none;
+    font-size: medium;
+}
